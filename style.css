@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*,*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 22.5rem;
+    padding: 2rem;
+    background:  hsl(217, 19%, 24%);
+    border-radius: 10px;
+    position: relative;
+}
+
+h1{
+    font-size: 0.9rem;
+    color: hsl(150, 100%, 66%);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+p{
+    text-align: center;
+    color:  hsl(193, 38%, 86%);
+    font-size: 28px;
+}
+
+.pattern-divider-mobile{
+    margin: 1.8rem 0;
+}
+
+.pattern-divider-desktop{
+    display: none;
+}
+
+.neon-circle{
+    background: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    left: 8.7rem;
+    cursor: pointer;
+}
+
+.neon-circle:hover{
+    box-shadow: 0px 0px 80px 6px hsl(150, 100%, 66%);
+}
+
+.icon-dice{
+    position: absolute;
+    width: 2rem;
+    left: 1.5rem;
+    top: 1.5rem;
+}
+
+@media (min-width: 1440px) {
+    
+    .container{
+        width: 32rem;
+        border-radius: 15px;
+    }
+
+    .pattern-divider-mobile{
+        display: none;
+    }
+
+    .pattern-divider-desktop{
+        display: block;
+        margin: 1.8rem 0;
+    }
+
+    .neon-circle{
+        left: 13.3rem;
+    }
+
+  }
